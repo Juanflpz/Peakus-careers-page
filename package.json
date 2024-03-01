@@ -8,6 +8,10 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@babel/plugin-transform-class-properties": "^7.23.3",
+    "@babel/plugin-transform-nullish-coalescing-operator": "^7.23.4",
+    "@babel/plugin-transform-optional-chaining": "^7.23.4",
+    "bootstrap": "^5.3.3",
     "core-js": "^3.8.3",
     "vue": "^2.6.14"
   },
