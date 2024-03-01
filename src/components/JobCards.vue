@@ -11,10 +11,11 @@
                             <div class="row align-items-center">
                                 <div class="mb-2 col" style="border-radius: 10px;">
                                     <a href="#" class="text-dark stretched-link d-inline d-md-inline-flex" style="text-decoration: none;">
-                                        <h2 class="job-title bold pl-md-2 pr-md-2 mb-0 pb-0">{{jobs.vacancyName}}</h2>
+                                        <h2 class="job-title bold pl-md-2 pr-md-2 mb-0 pb-0 me-2">{{jobs.vacancyName}}</h2>
                                         <section class="pl-md-2 d-inline d-md-inline-flex align-items-center text-truncate" v-for="(skill, index) in jobs.skills" :key="index">
-                                            <div role="button" class="skill-tag text-truncate border border-dark text-dark text-capitalize" style="font-size: 0.8em; margin-bottom: 0px !important;">
-                                                {{ skill }}
+                                            <div role="button" class="skill-tag text-truncate border border-dark text-dark text-capitalize ms-1" style="font-size: 0.8em; border-radius: 10px;">
+                                                <span class="mx-2">{{ skill }}</span>
+                                                
                                             </div>
                                         </section>
                                     </a>
@@ -64,7 +65,7 @@
                                         </g>
                                     </svg>{{jobs.publicationDate}}
                                 </div>
-                                <!--<div class="text-truncate col"></div>-->
+                                <div class="text-truncate col"></div>
                             </div>
                         </div>
                     </div>
@@ -144,9 +145,21 @@ export default {
 <!--single file component con html, script y css-->
 <!-- Estilos si es necesario -->
 <style scoped>
-
-.job-item:hover {
-    background-color: blanchedalmond;
-}
+    .skill-tag {
+        font-size: 0.8em;
+        margin-bottom: 0px !important;
+    }
+    .text-truncate {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .job-title{
+        font-size: 1.3em;
+        display: inline-block;
+    }
+    .job-item:hover {
+        background-color: blanchedalmond;
+    }
 /* Estilos CSS */
 </style>
