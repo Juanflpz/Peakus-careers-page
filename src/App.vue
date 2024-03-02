@@ -3,10 +3,10 @@
     <!--<img alt="Vue logo" src="./assets/logo.png">-->
     <!--<HelloWorld msg="Hola pepito"/>-->
     <div class="row">
-      <div class="col-lg-1">
+      <div class="col-lg-auto" style="width:90px">
         <sideNav></sideNav>
       </div>
-      <div class="col-lg-11 flex-grow-1">
+      <div class="col-lg-11 flex-grow-1 p-0">
         <JobCards></JobCards>
       </div>
     </div>
