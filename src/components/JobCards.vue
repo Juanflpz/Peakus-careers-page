@@ -1,17 +1,17 @@
 <template>
     <div class="container" style="width: 100%">
         <ul class="row job-item list-unstyled d-flex justify-content-center" style="" v-for="(job, index) in jobsList" :key="index">
-            <div class="card w-100">
+            <div class="card w-100 shadows">
                 <div class="card-body p-2 p-md-3">
                     <div class="row align-items-center">
-                        <div class="justify-content-center align-items-center col-md-1 col-3">
+                        <div class="justify-content-center align-items-center col-md-1 col-3 logos">
                             <img :src="job.img" alt="Company logo" width="70" height="70" class="rounded">
                         </div>
                         <div class="col-md-11 col-9">
                             <div class="row align-items-center">
                                 <div class="mb-2 col" style="border-radius: 10px;">
                                     <a href="#" class="text-dark stretched-link d-inline d-md-inline-flex" style="text-decoration: none;">
-                                        <h2 class="job-title bold pl-md-2 pr-md-2 mb-0 pb-0 me-2">{{job.vacancyName}}</h2>
+                                        <h2 class="job-title bold pl-md-2 pr-md-2 mb-0 pb-0 me-2 ">{{job.vacancyName}}</h2>
                                         <section class="pl-md-2 d-inline d-md-inline-flex align-items-center text-truncate" v-for="(skill, index) in job.skills" :key="index">
                                             <div role="button" class="skill-tag text-truncate border border-dark text-dark text-capitalize ms-1" style="font-size: 0.8em; border-radius: 10px;">
                                                 <span class="mx-2">{{ skill }}</span>
