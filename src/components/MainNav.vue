@@ -1,10 +1,10 @@
 <template>
     <div>
-        <nav class="navbar shadow px-2 py-0 navbar-light bg-light navbar-expand-lg" style="background:;" >
+        <nav class="navbar shadow px-2 py-0 navbar-light bg-light navbar-expand-lg" >
             <a href="#" target="_self" class="navbar-brand order-0 nuxt-link-active">
                 <img src="../assets/logo.png" height="60" class="">
             </a> <!---->
-            <div id="nav-collapse" class="order-4 order-md-1 navbar-collapse collapse" style="display:none;"><!---->
+            <div id="nav-collapse" class="order-4 order-md-1 navbar-collapse collapse d-flex justify-content-end" style="display:none;"><!---->
                 <ul class="navbar-nav ml-md-auto align-items-md-center">
                     <div class="d-md-flex pl-3 p-md-none">
                         <li class="nav-item mr-md-2 text-truncate">
@@ -93,7 +93,7 @@
                 </ul>
             </div>
             <div class="order-2 d-flex align-items-center">
-                <div class="mr-2">
+                <div class="mr-2 d-flex col-7">
                     <button type="button" class="btn d-inline-block position-relative btn-light border-secondary collapsed" aria-expanded="false" aria-controls="notifications-sidebar" style="overflow-anchor: none;">
                         <svg viewBox="0 0 16 16" width="1em" height="1em" focusable="false" role="img" aria-label="bell" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi-bell b-icon bi">
                             <g>
@@ -147,59 +147,17 @@
                             See candidates
                         </a>
                         <div class="dropdown b-dropdown order-2 profile-dropdown btn-group" title="Juan Felipe López Castaño" id="__BVID__168"><!---->
-                            <button aria-haspopup="menu" aria-expanded="false" type="button" class="btn dropdown-toggle btn-light p-0 p-md-1 dropdown-toggle-no-caret" id="__BVID__168__BV_toggle_">
-                                <div class="d-flex align-items-center" style="font-size: 0.7em;">
-                                    <span class="b-avatar badge-dark rounded-circle" lazy="" style="width: 1.8rem; height: 1.8rem;">
+                            <button aria-haspopup="menu" aria-expanded="false" type="button" id="__BVID__168__BV_toggle_">
+                                <div class="d-flex align-items-center justify-content-center" style="font-size: 0.7em;">
+                                    <span class="b-avatar badge-dark rounded-circle d-flex align-items-center justify-content-center" lazy="" style="width: 1.8rem; height: 1.8rem;">
                                         <span class="b-avatar-img">
                                             <img class="b-avatar-image" src="../assets/Juan_photo.png" alt="avatar">
                                         </span><!----></span>
-                                <div class="text-secondary d-none pl-1 text-left d-block" style="font-size: 9px;">
-                                    Juan
-                                    <div class="d-none d-sm-block">
-                                        <svg viewBox="0 0 16 16" width="1em" height="1em" focusable="false" role="img" aria-label="gem" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi-gem b-icon bi">
-                                            <g transform="translate(8 8) scale(0.8 0.8) translate(-8 -8)">
-                                                <path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z"></path>
-                                            </g>
-                                        </svg>
-                                        8438
-                                    </div>
+                                    
                                 </div>
-                            </div>
-                        </button>
-                        <ul role="menu" tabindex="-1" class="dropdown-menu dropdown-menu-right" aria-labelledby="__BVID__168__BV_toggle_">
-                            <li role="presentation">
-                                <a href="/es/premios" class="dropdown-item" role="menuitem" target="_self">
-                                    Redeem (8438)
-                                    <svg viewBox="0 0 16 16" width="1em" height="1em" focusable="false" role="img" aria-label="gem" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi-gem b-icon bi">
-                                        <title>Gems</title>
-                                        <g transform="translate(8 8) scale(0.7 0.7) translate(-8 -8)">
-                                            <path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z"></path>
-                                        </g>
-                                    </svg>
-                                </a>
-                            </li> <!---->
-                            <li role="presentation">
-                                <a href="/es/cv" class="dropdown-item" role="menuitem" target="_self">
-                                    Your CV
-                                </a>
-                            </li> <!---->
-                            <li role="presentation">
-                                <a href="/es/ajustes" class="dropdown-item" role="menuitem" target="_self">
-                                    Settings
-                                </a>
-                            </li> <!----> <!---->
-                            <li role="presentation">
-                                <a role="menuitem" href="#" target="_self" class="dropdown-item">
-                                    Change password
-                                </a>
-                            </li>
-                            <li role="presentation">
-                                <a role="menuitem" href="#" target="_self" class="dropdown-item">
-                                    Sign out
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                            </button>
+                        
+                        </div>
                 </div>
                 <div id="auth-modal___BV_modal_outer_" style="position: absolute; z-index: 1040;">
                     <div id="auth-modal" role="dialog" aria-hidden="true" aria-labelledby="auth-modal___BV_modal_title_" aria-describedby="auth-modal___BV_modal_body_" class="modal fade" style="display: none;">
@@ -284,8 +242,8 @@
                         </div>
                     </div><!---->
                 </div> <!---->
-            </div>
-        </div> 
+                </div>
+            </div> 
         <button type="button" aria-label="Toggle navigation" class="navbar-toggler d-none collapsed" aria-expanded="false" aria-controls="nav-collapse" style="overflow-anchor: none;">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -467,12 +425,20 @@ export default {
 <style scoped>
 .b-avatar{
     width: 1.8rem;
-    height: 1.8rem;
+    height: 1.8rem;    
 }
 .b-avatar-image{
     width: 20px;
     height: auto;
 }
+.b-icon.bi{
+    font-size: 125%;
+}
+.dropdown button{
+    border: none;
+    outline: none;
+}
+
 
 /* Estilos CSS */
 </style>

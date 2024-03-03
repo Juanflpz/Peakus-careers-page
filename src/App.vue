@@ -1,8 +1,11 @@
 <template>
-  <div id="app" class="container-fluid">
+  <div id="app" class="container-fluid pt-0 mt-0">
     <!--<img alt="Vue logo" src="./assets/logo.png">-->
     <!--<HelloWorld msg="Hola pepito"/>-->
-    <MainNav></MainNav>
+    <div class="py-0">
+      <MainNav></MainNav>
+    </div>
+    
     <div class="row">
       <div class="col-lg-auto" style="width:90px">
         <SideNav></SideNav>
@@ -34,6 +37,7 @@ export default {
 </script>
 
 <style>
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

@@ -1,10 +1,60 @@
 <template>
     <div class="container-fluid p-0">
-        <div id="search" class="container-fluid m-0 p-0" style="background-color: blue;">
-            <h1>Search</h1>
+        <div id="search" class="container-fluid m-0 p-0 py-3 mb-3">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-md-6 col-12">
+                        <div class="input-group">
+                            <div class="input-group-text">
+                                <svg view-box="0 0 16 16" width="1em" height="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+                                    </g>
+                                </svg>
+                            </div>
+                            
+                            <input type="search" placeholder="Search by title, salary, location or company" class="form-control">                            
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end mt-2 mt-md-0 col-md-6 col-12">
+                        <button type="button" class="btn btn-outline-light rounded-pill m-1">
+                            Work area
+                            <svg view-box="0 0 16 16" width="1em" height="1em" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                <g>
+                                    <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"></path>
+                                </g>
+                            </svg>
+                        </button>
+                        <button type="button" class="btn btn-outline-light rounded-pill m-1">
+                            Title
+                            <svg view-box="0 0 16 16" width="1em" height="1em" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                <g>
+                                    <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"></path>
+                                </g>
+                            </svg>
+                        </button>
+                        <button type="button" class="btn btn-outline-light rounded-pill m-1">
+                            Salary
+                            <svg view-box="0 0 16 16" width="1em" height="1em" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                <g>
+                                    <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"></path>
+                                </g>
+                            </svg>
+                        </button>
+                        <button type="button" class="btn btn-outline-light rounded-pill m-1">
+                            Location
+                            <svg view-box="0 0 16 16" width="1em" height="1em" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                <g>
+                                    <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"></path>
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="jobCards container-fluid">
-            <ul class="row job-item list-unstyled d-flex justify-content-center" style="" v-for="(job, index) in jobsList" :key="index">
+            <ul class="row job-item list-unstyled d-flex justify-content-center mx-1" style="" v-for="(job, index) in jobsList" :key="index">
                 <div class="card w-100 shadows">
                     <div class="card-body p-2 p-md-3">
                         <div class="row align-items-center">
@@ -172,7 +222,27 @@ export default {
         margin-left: auto!important;;
         margin-right: auto!important;
     }
-
-    
+    #search{
+        background-color: #3a8ced;
+        color: #fff;
+        position: sticky!important;
+        top: 0;
+        z-index: 1;
+    }
+    .input-group{
+        background-color: #fff;
+        border-radius: 0.25rem;
+        border: 1px solid rgba(70, 69, 69, .4);
+    }
+    .input-group-text{
+        display: flex;
+        align-items: center;
+        padding: 0.375rem 0.75rem;
+        margin-bottom: 0;
+        font-size: 1rem;
+        line-height: 1.5;
+        text-align: center;
+        white-space: nowrap;
+    }
 /* Estilos CSS */
 </style>
