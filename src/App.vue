@@ -2,9 +2,10 @@
   <div id="app" class="container-fluid">
     <!--<img alt="Vue logo" src="./assets/logo.png">-->
     <!--<HelloWorld msg="Hola pepito"/>-->
+    <MainNav></MainNav>
     <div class="row">
       <div class="col-lg-auto" style="width:90px">
-        <sideNav></sideNav>
+        <SideNav></SideNav>
       </div>
       <div class="col-lg-11 flex-grow-1 p-0">
         <JobCards></JobCards>
@@ -18,14 +19,16 @@
 <script>
 //import HelloWorld from './components/HelloWorld.vue'
 import JobCards from './components/JobCards.vue'
-import sideNav from './components/sideNav.vue'
+import SideNav from './components/SideNav.vue'
+import MainNav from './components/MainNav.vue'
 
 export default {
   name: 'App',
   components: {
     //HelloWorld,
     JobCards,
-    sideNav
+    SideNav,
+    MainNav
   }
 }
 </script>
